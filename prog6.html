@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prog6</title>
+</head>
+<body>
+    <h1>Form Submission</h1>
+    <form action="prog6.php" method="POST">
+        <!-- First Name -->
+        <label for="fn">Enter your First Name</label>
+        <input type="text" name="fn" id="fn" required><br><br>
+
+        <!-- Last Name -->
+        <label for="ln">Enter your Last Name</label>
+        <input type="text" name="ln" id="ln" required><br><br>
+
+        <!-- Branch Selection (Radio Buttons) -->
+        <label>Enter your branch</label><br>
+        <input type="radio" name="branch" value="Computer" id="comp" required>
+        <label for="comp">Computer</label><br>
+
+        <input type="radio" name="branch" value="Mechanical" id="mech" required>
+        <label for="mech">Mechanical</label><br>
+
+        <input type="radio" name="branch" value="ECE" id="ece" required>
+        <label for="ece">ECE</label><br><br>
+
+        <!-- Language Selection (Checkboxes) -->
+        <label>Select your favourite languages</label><br>
+        <input type="checkbox" name="language[]" value="English" id="english">
+        <label for="english">English</label><br>
+
+        <input type="checkbox" name="language[]" value="Marathi" id="marathi">
+        <label for="marathi">Marathi</label><br>
+
+        <input type="checkbox" name="language[]" value="Hindi" id="hindi">
+        <label for="hindi">Hindi</label><br><br>
+
+        <!-- State Selection (Dropdown) -->
+        <label for="states">Select your state</label><br>
+        <select name="states" id="states" required>
+            <option value="Goa">Goa</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Karnataka">Karnataka</option>
+        </select><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Enter your Date Of Birth</label>
+        <input type="date" name="dob" id="dob" required><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

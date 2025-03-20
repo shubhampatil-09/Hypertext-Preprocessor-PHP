@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prog7</title>
+</head>
+<body>
+    <form action="prog7.php" method="POST">
+        <!--Textbox-->
+        <label>Enter your First Name</label>
+        <input type="text" name="fn" required><br>
+        <label>Enter your Last Name</label>
+        <input type="text" name="ln" required><br><br>
+
+        <!--radio button-->
+        <label>Enter your branch </label><br>
+        <input type="radio" name="branch" value="Computer">COMP<br>
+        <input type="radio" name="branch" value="Mechanical">MECH<br>
+        <input type="radio" name="branch" value="ECE">ECE<br><br>
+
+        <!--checkbox-->
+        <label>Select your favourite languages </label><br>
+        <input type="checkbox" name="language[]" value="English">English<br>
+        <input type="checkbox" name="language[]" value="Marathi">Marathi<br>
+        <input type="checkbox" name="language[]" value="Hindi">Hindi<br><br>
+
+        <!--Dropdown Menu-->
+        <select name="states"><br><br>
+            <option value="Goa">Goa</option>
+            <option value="Maharastra">Maharashtra</option>
+            <option value="Karnataka">Karnataka</option>
+        </select><br><br>
+
+        <!--Date Of Birth-->
+        <label>Enter your Date Of Birth</label>
+        <input type="date" name="dob"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
